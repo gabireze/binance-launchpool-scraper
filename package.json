@@ -1,0 +1,32 @@
+{
+  "name": "binance-launchpool-scraper",
+  "version": "1.0.0",
+  "main": "index.mjs",
+  "type": "module",
+  "scripts": {
+    "start": "node index.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "binance",
+    "launchpool",
+    "telegram-bot",
+    "web-scraper",
+    "aws-lambda"
+  ],
+  "author": {
+    "name": "Gabriel de Rezende Gonçalves",
+    "email": "contato@gabireze.com.br",
+    "url": "https://gabireze.com.br/"
+  },
+  "license": "ISC",
+  "description": "A Node.js AWS Lambda function that scrapes updates from Binance Launchpool and notifies a Telegram chat every 6 hours.",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.567.0",
+    "@aws-sdk/lib-storage": "^3.567.0",
+    "@sparticuz/chromium": "^123.0.1",
+    "dotenv": "^16.4.5",
+    "node-telegram-bot-api": "^0.65.1",
+    "puppeteer-core": "^22.7.1"
+  }
+}
